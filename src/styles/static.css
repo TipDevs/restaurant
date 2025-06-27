@@ -41,7 +41,31 @@ header .desktop_nav button {
     padding: 7px 10px;
     border-radius: 5px;
     border: none;
+    cursor: pointer;
     background-color: #caca29;
+}
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background: #caca29;
+}
+.hamburger_nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 8px;
+    z-index: 5;
 }
 main {
     flex: 5;
@@ -51,4 +75,13 @@ main {
 }
 footer {
     flex: 1.3;
+}
+
+@media(max-width: 780px) {
+    header .desktop_nav {
+        display: none;
+    }
+    header .hamburger {
+        display: flex;
+    }
 }
