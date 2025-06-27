@@ -19,5 +19,69 @@ const foodDescriptions = [
   
   "A light yet intensely aromatic broth made with fresh catfish, seasoned with local spices like uda, uziza, and scent leaves. It’s peppery, warming, and slightly herbal. Expect a hot, soul-soothing experience with tender fish chunks swimming in a spicy, aromatic broth perfect for chilly evenings or a cleansing treat."
 ];
+
+const customerReviews = [
+    {
+      name: "Chidinma A.",
+      review: "Aila's Kitchen is a hidden gem! The Jollof Rice was absolutely divine — rich, smoky, and perfectly spiced. Can’t wait to come back for more!",
+      rating: 5,
+      date: "25th of June, 2025"
+    },
+    {
+      name: "Tolu M.",
+      review: "I tried the Seafood Rice for the first time and wow… the flavors were so fresh and vibrant. You can literally taste the ocean in every bite.",
+      rating: 4,
+      date: "24th of June, 2025"
+    },
+    {
+      name: "Emeka C.",
+      review: "The Asun Pasta was a bold and fiery experience! The goat meat was tender, and the pepper sauce had just the right amount of kick. A must-try for spice lovers.",
+      rating: 5,
+      date: "23rd of June, 2025"
+    },
+    {
+      name: "Aisha B.",
+      review: "Efo Riro at Aila's Kitchen reminds me of home. The assorted meats and perfectly seasoned greens took me straight to a proper Yoruba kitchen. 10/10.",
+      rating: 5,
+      date: "22nd of June, 2025"
+    },
+    {
+      name: "Kingsley O.",
+      review: "If you haven’t had their Cat Fish Pepper Soup, you’re missing out. The broth was so aromatic and comforting, with a peppery heat that warms you from the inside.",
+      rating: 4,
+      date: "21st of June, 2025"
+    },
+    {
+      name: "Ada E.",
+      review: "Tried the Alfredo Pasta last weekend and it was heavenly. Creamy, cheesy, and so indulgent. I didn’t expect a Nigerian kitchen to get it this good!",
+      rating: 5,
+      date: "20th of June, 2025"
+    },
+    {
+      name: "Daniel K.",
+      review: "This place has the best customer service and the food quality is top notch. The presentation, the taste — everything was on point.",
+      rating: 5,
+      date: "19th of June, 2025"
+    },
+    {
+      name: "Faith N.",
+      review: "I love how every dish at Aila's Kitchen feels like it was made with love. It’s my go-to spot for comfort food that always delivers.",
+      rating: 5,
+      date: "18th of June, 2025"
+    },
+    {
+      name: "David P.",
+      review: "From the moment you walk in, the aroma hits you. The food tastes even better than it smells. Jollof and Efo Riro are my personal favorites!",
+      rating: 5,
+      date: "17th of June, 2025"
+    },
+    {
+      name: "Temi O.",
+      review: "Aila’s Kitchen is proof that simple, traditional recipes done right can outshine anything. The flavors are authentic, and portions are generous.",
+      rating: 5,
+      date: "16th of June, 2025"
+    }
+  ];
+  
 homeUI();
-export { foodImages, foods, foodDescriptions };
+export { foodImages, foods, foodDescriptions, customerReviews };
