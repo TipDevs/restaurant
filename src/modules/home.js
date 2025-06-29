@@ -19,7 +19,7 @@ function createFoodBoxUI() {
     foodBoxesContainer.classList.add("food-box-container");
   
     const foodInfoContainer = document.createElement('div');
-    foodInfoContainer.classList.add("food-box", "transition");
+    foodInfoContainer.classList.add("food-box");
     foodBoxesContainer.appendChild(foodInfoContainer);
   
     let currentIndex = 0;
@@ -44,20 +44,18 @@ function createFoodBoxUI() {
         foodInfoContainer.appendChild(foodImage);
   
       // Fade in
-      foodInfoContainer.classList.add("show");
+      foodInfoContainer.classList.add('transition');
+
+      foodInfoContainer.addEventListener('animationend', () => {
+        foodInfoContainer.classList.remove('transition');
+      }, { once: true });
   
       // After 2s, fade out and move to next
       setTimeout(() => {
-        foodInfoContainer.classList.remove("show");
-          foodInfoContainer.classList.add("hide");
           foodInfoContainer.removeChild(foodDescription);
           foodInfoContainer.removeChild(foodImage);
-  
-        setTimeout(() => {
-          foodInfoContainer.classList.remove("hide");
           currentIndex = (currentIndex + 1) % foodItems.length;
           showNextFood();
-        }, 200); // match your CSS transition duration
       }, 4000); // duration each box stays visible
     }
   
@@ -102,11 +100,9 @@ function loadCustomerReviews() {
     reviewLoadingBox.classList.add('show');
 
     setTimeout(() => {
-      reviewLoadingBox.classList.remove('show');
-      reviewLoadingBox.classList.add('hide');
+      reviewLoadingBox.classList.add("transition");
 
       setTimeout(() => {
-        reviewLoadingBox.classList.remove('hide');
         currentIndex = (currentIndex + 1) % reviews.length;
         showNextReview();
       }, 600); // match your CSS transition
