@@ -1,6 +1,6 @@
 import "./styles/static.css";
 import jollofRice from "./assets/images/jollof_rice.webp";
-import alfredoPasta from "./assets/images/asun_pasta.webp";
+import alfredoPasta from "./assets/images/alfredo_pasta.webp";
 import seaFoodRice from "./assets/images/seafood_rice.webp";
 import efoRiro from "./assets/images/efo_riro.webp";
 import catFishPepperSoup from "./assets/images/cat_fish_pepper_soup.webp";
