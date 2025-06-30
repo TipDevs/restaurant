@@ -97,15 +97,12 @@ function loadCustomerReviews() {
     reviewRate.textContent = `⭐ ${reviewItem.rating}`;
     reviewDate.textContent = reviewItem.date;
 
-    reviewLoadingBox.classList.add('show');
+    reviewLoadingBox.classList.add('transition');
 
     setTimeout(() => {
       reviewLoadingBox.classList.add("transition");
-
-      setTimeout(() => {
         currentIndex = (currentIndex + 1) % reviews.length;
         showNextReview();
-      }, 600); // match your CSS transition
     }, 4000);
   }
 
