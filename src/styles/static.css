@@ -110,6 +110,30 @@ footer {
     background-color: #caca29;
     color: #000;
 }
+.social_media {
+    color: #8f8f8f;
+    max-width: 30ch;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.social_media h3 {
+    text-align: center;
+}
+.social_media_handle {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+}
+.social_media_handle a {
+    color: #caca29;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 @media(max-width: 780px) {
     header .desktop_nav {
         display: none;
@@ -120,5 +144,6 @@ footer {
     footer {
         flex-direction: column;
         justify-content: center;
+        padding-bottom: 30px;
     }
 }
