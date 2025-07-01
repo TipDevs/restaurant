@@ -116,10 +116,13 @@ footer {
     font-size: 14px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 20px;
 }
 .social_media h3 {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .social_media_handle {
     display: grid;
