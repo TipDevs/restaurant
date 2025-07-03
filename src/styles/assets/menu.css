@@ -49,3 +49,9 @@
     border-radius: 5px;
     margin-top: 10px;
 }
+
+@media(max-width: 500px) {
+    .food_card {
+        flex-direction: column-reverse;
+    }
+}
