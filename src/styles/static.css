@@ -61,15 +61,26 @@ header .desktop_nav button {
     position: absolute;
     top: 70px;
     right: 20px;
-    background: #fff;
+    background: #000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     padding: 10px;
     border-radius: 8px;
     z-index: 5;
+    gap: 10px;
+}
+.hamburger_nav button {
+    background-color: #caca29;
+    color: #000;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+}
+.hamburger_nav.active {
+    display: flex;
 }
 main {
     flex: 5;
-    padding: 30px 0;
+    padding: 10px 0 30px;
 }
 footer {
     flex: 1.3;
