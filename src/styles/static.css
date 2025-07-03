@@ -69,9 +69,7 @@ header .desktop_nav button {
 }
 main {
     flex: 5;
-    /* background-color: #333; */
-    display: flex;
-    flex-direction: column;
+    padding: 30px 0;
 }
 footer {
     flex: 1.3;
