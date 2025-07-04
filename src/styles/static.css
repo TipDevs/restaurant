@@ -7,13 +7,13 @@ body {
     display: flex;
     flex-direction: column;
     /* flex: 1; */
-    background-color: #000;
+    background: linear-gradient(90deg, #c6993e 0%, #e6683c 25%, #c515057f 50%, 75%, #c6993e 100%);
     height: 100dvh;
     position: relative;
 }
 header {
     position: sticky;
-    background-color: #000;
+    background-color: #121212;
     top: 0;
     width: 70%;
     min-width: 350px;
@@ -28,7 +28,7 @@ header {
     box-shadow: 0 3px 5px #434141;
 }
 header h1 {
-    color: #caca29;
+    color: #c6993e;
     font-style: italic;
     flex: 2;
 }
@@ -42,7 +42,9 @@ header .desktop_nav button {
     border-radius: 5px;
     border: none;
     cursor: pointer;
-    background-color: #caca29;
+    background-color: #c6993e;
+    color: #121212;
+    font-weight: bold;
 }
 .hamburger {
     display: none;
@@ -53,7 +55,7 @@ header .desktop_nav button {
 .hamburger div {
     width: 25px;
     height: 3px;
-    background: #caca29;
+    background: #c6993e;
 }
 .hamburger_nav {
     display: none;
@@ -61,7 +63,7 @@ header .desktop_nav button {
     position: absolute;
     top: 70px;
     right: 20px;
-    background: #000;
+    background: #121212;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     padding: 10px;
     border-radius: 8px;
@@ -69,11 +71,12 @@ header .desktop_nav button {
     gap: 10px;
 }
 .hamburger_nav button {
-    background-color: #caca29;
-    color: #000;
+    background-color: #c6993e;
+    color: #121212;
     border-radius: 5px;
     border: none;
     padding: 5px;
+    font-weight: bold;
 }
 .hamburger_nav.active {
     display: flex;
@@ -87,6 +90,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    background-color: #121212;
 }
 
 .customer_complaint {
@@ -95,7 +99,7 @@ footer {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    color: #caca29;
+    color: #fafafa;
     gap: 10px;
 }
 .customer_complaint form {
@@ -111,16 +115,17 @@ footer {
     background: none;
     outline: none;
     border: none;
-    border-bottom: 2px solid #caca29;
-    color: #caca29;
+    border-bottom: 2px solid #fafafa;
+    color: #fafafa;
 }
 .customer_complaint>form>button {
-    border: 4px solid #caca29;
-    background-color: #caca29;
-    color: #000;
+    border: 4px solid #c6993e;
+    background-color: #c6993e;
+    color: #121212;
+    font-weight: bold;
 }
 .social_media {
-    color: #8f8f8f;
+    color: #fafafa;
     max-width: 30ch;
     font-size: 14px;
     display: flex;
@@ -140,7 +145,7 @@ footer {
     gap: 20px;
 }
 .social_media_handle a {
-    color: #caca29;
+    color: #fafafa;
     text-decoration: none;
     display: flex;
     align-items: center;

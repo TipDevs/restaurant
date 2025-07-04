@@ -3,8 +3,8 @@
     justify-content: center;
 }
 .about_ceo_box {
-    background-color: #caca29;
-    color: #000;
+    background: linear-gradient(90deg, #12121290 0%, #e6683c 25%, #c515058c 50%,  75%, #c6993e 100%);
+    color: #121212;
     padding: 20px 50px;
     width: 70%;
     max-width: 1000px;
@@ -18,7 +18,7 @@
 }
 .about_ceo_box h2,
 .about_ceo_box h3 {
-    color: #666;
+    color: #c6993e;
     max-width: 30ch;
 }
 .about_ceo_box img {
@@ -28,13 +28,17 @@
     border: 5px solid #666;
 }
 .about_ceo_box p {
-    max-width: 45ch;
+    max-width: 60ch;
 }
 .about_ceo_box ul {
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 .about_ceo_box ul li {
-    max-width: 45ch;
+    max-width: 60ch;
+
 }
 @media (max-width: 780px) {
 

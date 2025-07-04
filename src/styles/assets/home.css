@@ -1,7 +1,7 @@
 home_main {
     display: flex;
     flex-direction: column;
-    background-color: #000;
+    background-color: #121212;
 }
 .hero_section {
     display: flex;
@@ -17,9 +17,9 @@ home_main {
     max-width: 1000px;
     border-radius: 20px;
     /* padding: 0 15px; */
-    background-color: #caca29;
+    background-color: #c6993e;
     z-index: 2;
-    box-shadow: 0 0 3px #caca29;
+    box-shadow: 0 0 3px #c6993e;
     display: flex;
     justify-content: center;
     /* flex-direction: column; */
@@ -31,10 +31,15 @@ home_main {
 button {
     width: fit-content;
     padding: 7px 14px;
-    background-color: black;
-    color: #caca29;
+    background-color: #c51605;
+    color: #fafafa;
     border-radius: 5px;
     margin-top: 30px;
+    border: none;
+    font-weight: bold;
+    &:hover {
+            background: #a31304;
+        }
 }
 
 .food-box {
@@ -88,13 +93,13 @@ button {
 
 .food-box h2 {
     font-size: 22px;
-    color: #333;
+    color: #121212;
 }
 
 .food-box p {
     margin-top: 8px;
     font-size: 15px;
-    color: #666;
+    color: #121212;
     max-width: 40ch;
 }
 
@@ -107,7 +112,7 @@ button {
 }
 
 .review_section {
-    background-color: #caca29;
+    background-color: #c6993e;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -115,13 +120,13 @@ button {
 }
 
 .review_box {
-    background-color: #000;
+    background-color: #121212;
     height: 400px;
     width: 70%;
     min-width: 300px;
     max-width: 1000px;
     border-radius: 20px;
-    color: #caca29;
+    color: #c6993e;
     display: flex;
     align-items: center;
     justify-content: center;
