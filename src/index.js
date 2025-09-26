@@ -2,6 +2,9 @@ import "./styles/static.css";
 import { homeUI } from "./modules/home.js";
 import { menuUI } from "./modules/menu.js";
 import { aboutUI } from "./modules/about.js";
+window.addEventListener("load", () => {
+    document.body.style.visibility = "visible";
+});
 let homeBtn = document.querySelectorAll('.home_btn');
 let menuBtn = document.querySelectorAll('.menu_btn');
 let aboutBtn = document.querySelectorAll('.about_btn');
